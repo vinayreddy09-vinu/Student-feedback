@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Student Feedback Form</title></head>
+<body>
+    <h2>Feedback Form</h2>
+    <form action="/submit" method="POST">
+        Name: <input type="text" name="name" required><br>
+        Subject: <input type="text" name="subject" required><br>
+        Rating: <select name="rating">
+            <option>Excellent</option><option>Good</option><option>Average</option><option>Poor</option>
+        </select><br>
+        Comments:<br><textarea name="comments"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
