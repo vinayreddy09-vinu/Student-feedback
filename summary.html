@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Feedback Summary</title></head>
+<body>
+    <h2>Feedback Summary</h2>
+    <table border="1">
+        <tr><th>Name</th><th>Subject</th><th>Rating</th><th>Comments</th></tr>
+        {% for fb in feedbacks %}
+        <tr><td>{{ fb[0] }}</td><td>{{ fb[1] }}</td><td>{{ fb[2] }}</td><td>{{ fb[3] }}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
